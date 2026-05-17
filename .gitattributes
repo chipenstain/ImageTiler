@@ -1,0 +1,9 @@
+# GeoTIFF / TIFF
+*.tif filter=lfs diff=lfs merge=lfs
+*.tiff filter=lfs diff=lfs merge=lfs
+# High‑res images
+*.png filter=lfs diff=lfs merge=lfs
+*.jpg filter=lfs diff=lfs merge=lfs
+*.jpeg filter=lfs diff=lfs merge=lfs
+# WebP tiles
+*.webp filter=lfs diff=lfs merge=lfs
