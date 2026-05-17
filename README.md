@@ -29,3 +29,6 @@ Run:
 python main.py sample/world.200407.3x21600x10800_geo.tif 16 2 -o out
 ```
 
+Sample files can be
+downloaded [here](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/)
+and [here.](https://science.nasa.gov/earth/earth-observatory/earth-at-night/maps/)
