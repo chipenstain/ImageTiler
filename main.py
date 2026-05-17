@@ -3,6 +3,7 @@ import os
 
 from PIL import Image
 
+# allow huge images
 Image.MAX_IMAGE_PIXELS = None
 
 
@@ -12,7 +13,7 @@ def ensure_dir(path):
 
 
 def main():
-	parser = argparse.ArgumentParser(description="Universal image tiler")
+	parser = argparse.ArgumentParser(description="Universal image tiler NxM")
 	parser.add_argument("input", help="Path to input image (GeoTIFF/JPG/PNG)")
 	parser.add_argument("tiles_x", type=int, help="Number of tiles horizontally")
 	parser.add_argument("tiles_y", type=int, help="Number of tiles vertically")
@@ -50,8 +51,8 @@ def main():
 			tile.save(
 				out_path,
 				"WEBP",
-				quality=90,  # оптимум для карт
-				method=6,  # максимальная оптимизация
+				quality=90,
+				method=6,
 				optimize=True,
 				lossless=False
 			)
